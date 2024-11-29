@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app color="background">
     <v-main>
       <!-- <HelloWorld/> -->
        <MainPost/>
@@ -24,3 +24,7 @@ export default {
   }),
 }
 </script>
+
+<style>
+
+</style>
