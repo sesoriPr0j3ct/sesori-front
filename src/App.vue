@@ -1,20 +1,17 @@
 <template>
   <v-app color="background">
     <v-main>
-       <MainPost/>
+       <router-view/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import MainPost from './components/MainPost.vue';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
-    MainPost,
   },
 
   data: () => ({

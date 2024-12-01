@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in test" :key="item.postIdx">
+        <tr v-for="item in postData" :key="item.postIdx">
           <td>{{ item.postIdx }}</td>
           <td>{{ item.contentTitle }}</td>
           <td>{{ item.userName }}</td>
@@ -24,26 +24,15 @@
   </template>
   
   
-  <script>
-  import postService from '@/service/postService';
-  
-  export default {
+<script>
+export default {
     name: 'MainPost',
-    data: () => ({
-      test: [],
-    }),
-  
-    methods: {
-      async getPosts() {
-        const response = await postService.getPosts();
-        this.test = response.data;
-      },
+    props: {
+        postData: {
+            type: Object,
+            required: true
+        },
     },
-  
-    created() {
-      this.getPosts();
-    },
-  };
-  </script>
+};
+</script>
 
-  
