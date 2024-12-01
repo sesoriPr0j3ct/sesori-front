@@ -1,0 +1,30 @@
+/* .custom-container {
+    background-color: rgb(var(--v-theme-primary));
+    color: rgba(var(--v-theme-on-primary));
+    padding: 16px;
+}
+
+#container {
+    background-color: rgb(var(--v-theme-primary));
+color: rgba(var(--v-theme-on-primary), 0.8);
+} */
+
+.theme-background {
+    background-color: rgb(var(--v-theme-background));
+    color: rgba(var(--v-theme-on-background));
+}
+
+.theme-surface {
+    background-color: rgb(var(--v-theme-surface));
+    color: rgba(var(--v-theme-on-surface));
+}
+
+.theme-primary {
+    background-color: rgb(var(--v-theme-primary));
+    color: rgba(var(--v-theme-on-primary));
+}
+
+.theme-secondary {
+    background-color: rgb(var(--v-theme-secondary));
+    color: rgba(var(--v-theme-on-secondary));
+}
