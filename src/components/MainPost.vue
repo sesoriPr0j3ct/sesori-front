@@ -13,7 +13,7 @@
       <tbody>
         <tr v-for="item in postData" :key="item.postIdx">
           <td>{{ item.postIdx }}</td>
-          <td>{{ item.contentTitle }}</td>
+          <td @click="navigateTo(item.postIdx)">{{ item.contentTitle }}</td>
           <td>{{ item.userName }}</td>
           <td>{{ item.createdAt }}</td>
           <td>{{ item.likeCount }}</td>
@@ -33,6 +33,12 @@ export default {
             required: true
         },
     },
+    methods: {
+      navigateTo(postIdx) {
+        this.$router.push(`/post/${postIdx}`);
+      },
+  },
+
 };
 </script>
 

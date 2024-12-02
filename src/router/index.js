@@ -6,6 +6,11 @@ const routes = [
     name: 'Home',
     component: () => import('@/views/PostView.vue'),
   },
+  {
+    path: '/post/:postIdx',
+    name: 'PostDetail',
+    component: () => import('@/views/PostDetailView.vue'),
+  },
 ];
 const router = createRouter({
   history: createWebHistory(),
