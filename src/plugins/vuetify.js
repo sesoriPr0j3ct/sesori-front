@@ -1,11 +1,10 @@
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify';
-import 'vuetify/styles';
 
 export default createVuetify({
   theme: {
-    defaultTheme: 'dark', // 기본 테마를 light로 설정
+    defaultTheme: 'dark',
     themes: {
       light: {
         dark: false,
