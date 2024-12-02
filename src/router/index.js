@@ -11,6 +11,11 @@ const routes = [
     name: 'PostDetail',
     component: () => import('@/views/PostDetailView.vue'),
   },
+  {
+    path: '/post/create',
+    name: 'PostCreate',
+    component: () => import('@/views/PostCreateView.vue'),
+  },
 ];
 const router = createRouter({
   history: createWebHistory(),

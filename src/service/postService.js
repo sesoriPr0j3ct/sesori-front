@@ -11,5 +11,7 @@ export default {
         return apiClient.get(`${urlPreFix}/view/${postIdx}`)
     },
 
-
+    CreatePost(post) {
+        return apiClient.post(`${urlPreFix}/create`, post)
+    }
 }
