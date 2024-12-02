@@ -24,7 +24,7 @@ export default {
     methods: {
         async createPost() {
             const newPost = {"userIdx": this.userIdx, "contentTitle": this.postTitle, "contentText": this.postText}
-            await postService.CreatePost(newPost)
+            await postService.createPost(newPost)
         }
     }
 }
